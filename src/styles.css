@@ -5,8 +5,8 @@
 }
 
 body {
-  margin: 90px auto;
-  max-width: 900px;
+  margin: 100px auto;
+  max-width: auto;
 }
 
 h1 {
@@ -49,6 +49,10 @@ h3 {
   color: white;
 }
 
+.contact-link:hover {
+  color: white;
+}
+
 .about-link {
   color: var(--primary-color);
   border: 1px solid var(--primary-color);
@@ -70,7 +74,7 @@ h3 {
 }
 
 img {
-  width: auto;
+  width: 300%;
 }
 .email-link {
   display: flex;
@@ -102,6 +106,10 @@ img {
   background-color: var(--primary-color);
   color: white;
 }
+
+.border:hover {
+  color: white;
+}
 .img-fluid {
   border: 5px solid white;
   border-radius: 10px;
@@ -111,4 +119,41 @@ img {
 
 .shadow-lg {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 576px) {
+  h2 {
+    font-size: 32px;
+    margin: 0;
+    text-align: center;
+  }
+  h1 {
+    font-size: 48px;
+    line-height: 1.5;
+    margin: 0;
+    text-align: center;
+  }
+  h3 {
+    font-size: 24px;
+    opacity: 0.7;
+    margin: 0;
+    text-align: center;
+  }
+  .border {
+    display: block;
+    text-align: center;
+  }
+  .project-link {
+    margin: 0 20px;
+    border-radius: 5px;
+    padding: 20px 15px;
+    text-decoration: none;
+    text-transform: capitalize;
+    background-color: var(--primary-color);
+    box-shadow: var(--box-shadow);
+    color: white;
+  }
+  .rounded {
+    display: none;
+  }
 }
